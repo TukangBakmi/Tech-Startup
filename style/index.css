@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.navbar {
+    height: 4.5em;
+    background: linear-gradient(to right, #007bffbe, #6710f2ad);
+}
+.wrapper {
+    margin-top: 4.5em;
+    background: linear-gradient(to right, #007bff, #6610f2);
+    color: white;
+    text-align: center;
+}
+.container .nav-link, .navbar-brand {
+    color: white !important;
+}
+.blue-button {
+    border-radius: 40px !important;
+    padding: 0.5em 2em !important;
+    color: rgb(255, 255, 255) !important;
+    background-color: #000fdb !important;
+}
+.blue-button:hover, .blue-button:focus {
+    color: rgb(255, 255, 255) !important;
+    background-color: #424cd8 !important;
+}
+#backToTop {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#backToTop:hover {
+    background-color: #6610f2;
+}
+.features, .cta {
+    background: white;
+    padding: 50px 0;
+    text-align: center;
+}
+.about {
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+footer {
+    background: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}

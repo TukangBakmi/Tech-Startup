@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Teknologi</title>
+    <link rel="icon" href="assets/logo.webp">
+    <link rel="stylesheet" href="style/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <div class="container">
+        <div class="d-flex align-items-start">
+            <img src="assets/logo.webp" alt="TechStartup Logo" class="my-auto" style="height: 40px; margin-right: 8%;" >
+            <a class="navbar-brand fs-4 fw-bold" href="#">TechStartup</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link scroll-link mx-4 fs-5" href="#features">Features</a></li>
+                <li class="nav-item"><a class="nav-link scroll-link mx-4 fs-5" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link scroll-link mx-4 fs-5" href="#cta">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="backToTop" class="btn btn-primary rounded-circle shadow" style="position: fixed; bottom: 30px; right: 30px; display: none; z-index: 1000;">
+    <div class="h-100 d-flex justify-content-center align-items-center">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+</div>
+
+<!-- Top Wrapper Section -->
+<div class="wrapper">
+    <div class="container row mx-auto">
+        <div class="col-6 d-flex flex-column my-auto" style="text-align: left;">
+            <h1 class="fw-bold" data-aos="fade-up">Revolutionize Your Business with Advanced Technology</h1>
+            <p class="fs-6 fst-italic" data-aos="fade-up" data-aos-delay="200">Empowering you with tools to innovate, grow, and succeed.</p>
+            <div>
+                <a href="#features" class="btn blue-button btn-lg mx-auto my-3" data-aos="fade-up" data-aos-delay="600">Learn More</a>
+            </div>
+        </div>
+        <div class="col-6">
+            <img src="assets/wrapper.webp" alt="icon-wrapper" style="width: 100%;" data-aos="fade-up" data-aos-delay="400">
+        </div>
+    </div>
+</div>
+
+<!-- Features Section -->
+<section id="features" class="features">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="bi bi-lightning-charge-fill display-1 text-primary"></i>
+                <h3 class="mt-2">Fast Performance</h3>
+                <p>Our platform ensures the fastest processing times for your applications.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-shield-lock-fill display-1 text-primary"></i>
+                <h3 class="mt-2">Top Security</h3>
+                <p>Protect your data with our state-of-the-art security measures.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-graph-up-arrow display-1 text-primary"></i>
+                <h3 class="mt-2">Scalable Solutions</h3>
+                <p>Grow your business seamlessly with our scalable technology.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="row mx-auto">
+            <div class="col-4">
+                <img class="w-100 px-5 pb-2" src="assets/logo.webp" alt="TechStartup Logo">
+                <h1 class="text-center fw-bold">TechStartup</h1>
+            </div>
+            <div class="col-8 d-flex flex-column my-auto">
+                <h2>About Us</h2>
+                <p style="text-align: justify;">TechStartup is dedicated to providing innovative solutions to help businesses thrive in the digital age. Our team of experts specializes in developing scalable, secure, and high-performance platforms tailored to your needs.</p>
+                <p style="text-align: justify;">With years of experience and a commitment to excellence, we empower companies to achieve their goals and stay ahead in the competitive tech landscape.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section id="cta" class="cta">
+    <div class="container">
+        <h2>Ready to start your journey?</h2>
+        <p>Join thousands of innovators leveraging our technology to achieve their goals.</p>
+        <a href="https://wa.me/627881003310" target="_blank" class="btn blue-button btn-lg">Contact Us</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p class="m-0">&copy; 2024 TechStartup. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<script>
+    document.querySelectorAll('.scroll-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }
+        });
+    });
+
+    // Initialize AOS
+    AOS.init({
+        duration: 1000,
+        once: true,
+    });
+
+    // Highlight Navigation Links on Scroll
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.scroll-link');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            if (window.scrollY >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    // Back-to-Top Button
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
+    });
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
