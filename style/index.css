@@ -3,17 +3,35 @@ body {
     line-height: 1.6;
 }
 .navbar {
+    padding: 1rem;
     height: 4.5em;
     background: linear-gradient(to right, #007bffbe, #6710f2ad);
+}
+.navbar-brand {
+    color: white !important;
+    font-size: 1.5rem;
+}
+.navbar-nav .nav-link {
+    color: #ffffffac !important;
+    margin: 0.5rem 0;
+}
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+}
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+.navbar-collapse {
+    background: linear-gradient(to right, #007bff, #6610f2); /* Match navbar background */
 }
 .wrapper {
     margin-top: 4.5em;
     background: linear-gradient(to right, #007bff, #6610f2);
     color: white;
     text-align: center;
-}
-.container .nav-link, .navbar-brand {
-    color: white !important;
 }
 .primary-button {
     border-radius: 40px !important;
@@ -69,4 +87,28 @@ footer {
     color: white;
     padding: 20px 0;
     text-align: center;
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        background: rgba(0,0,0,0);
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    #backToTop {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+    }
 }
