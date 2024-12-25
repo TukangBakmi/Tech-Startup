@@ -36,7 +36,7 @@ body {
 .primary-button {
     border-radius: 40px !important;
     padding: 0.5em 2em !important;
-    outline: 2px solid #000fdb !important;
+    outline: 2px solid rgb(185, 185, 255) !important;
     color: black !important;
     background-color: rgb(225, 225, 255) !important;
 }
