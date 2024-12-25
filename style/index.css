@@ -15,15 +15,33 @@ body {
 .container .nav-link, .navbar-brand {
     color: white !important;
 }
-.blue-button {
+.primary-button {
     border-radius: 40px !important;
     padding: 0.5em 2em !important;
-    color: rgb(255, 255, 255) !important;
-    background-color: #000fdb !important;
+    outline: 2px solid #000fdb !important;
+    color: black !important;
+    background-color: rgb(225, 225, 255) !important;
 }
-.blue-button:hover, .blue-button:focus {
-    color: rgb(255, 255, 255) !important;
-    background-color: #424cd8 !important;
+.primary-button:hover {
+    color: black !important;
+    background-color: white !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) !important;
+    transform: translateY(-2px) !important;
+}
+.secondary-button {
+    border-radius: 40px !important;
+    padding: 0.5em 2em !important;
+    color: black !important;
+    background-color: rgb(200, 200, 255) !important;
+}
+.secondary-button:hover {
+    color: black !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) !important;
+    transform: translateY(-2px) !important;
+}
+.primary-button:active, .secondary-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 #backToTop {
     width: 50px;
