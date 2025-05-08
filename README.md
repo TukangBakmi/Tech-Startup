@@ -9,9 +9,8 @@ This project was created as a front-end assignment to demonstrate HTML/CSS layou
 ## 🖥️ Technologies Used
 
 - **HTML5** — Page structure  
-- **CSS3** — Styling and layout  
-- **Responsive Design** — Mobile-friendly layout  
-- *(Optional)* Bootstrap or other frameworks (if used — update this if applicable)
+- **CSS3** — Styling and layout
+- **Bootstrap 5** — Grid system, components, and responsive design
 
 ## 📸 Preview
 
