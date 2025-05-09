@@ -18,6 +18,15 @@ This project was created as a front-end assignment to demonstrate HTML/CSS layou
 
 ## 🚀 How to Use
 
-1. Clone the repository:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/TukangBakmi/Tech-Startup.git
+   ```
+2. **Open index.html in your browser**:
+- Simply double-click index.html
+- Or right-click and choose “Open with” → your preferred browser
+
+## 🙋‍♂️ Author
+
+**Albert Ardiansyah**  
+📫 [@TukangBakmi on GitHub](https://github.com/TukangBakmi)
